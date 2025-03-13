@@ -1,4 +1,4 @@
-![Projeto RECCO](./img/PÁGINA%204.jpg)
+![Projeto FRANQUIA RECCO](./img/PÁGINA%204.jpg)
 
 # Projeto FRANQUIA RECCO
 
