@@ -1,0 +1,897 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.rd-section { 
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #FFF5E4;
+  scroll-behavior: smooth;
+  width: 100%;
+}
+
+section{
+    padding: 5rem 2rem 0 2rem;
+    margin-bottom: 4rem; /* Espaçamento entre final de uma sessão e início de outra */
+}
+
+body {
+  background-color: #FFF5E4;
+}
+
+/* Fontes padronizadas */
+h1 {
+  font-family: "Poppins", serif;
+  color: #BE452B;
+  font-size: 3rem; /* Título */
+  font-weight: 600;
+  line-height: 110%;
+  margin-bottom: 1.5rem; /* Espaçamento entre título e texto */
+}
+h2, h3{
+  font-family: "Merriweather", serif;
+  font-weight: 700;
+  color: #BE452B;
+  font-size: 2.5rem; /* Subtítulo */
+  margin-bottom: 1.5rem; /* Espaçamento entre título e texto */
+}
+p {
+  font-family: "Poppins", serif;
+  font-weight: 400;
+  font-size: 1rem; /* Texto */
+}
+
+/* Regra para espaçamento entre texto e imagem */
+p + img {
+  margin-top: 2rem; /* Espaçamento entre texto e imagem */
+}
+
+/* Botões */
+.btn-geral {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  background-color: #BE452B;
+  color: #fffffc;
+  padding: 0.5rem 8rem;
+  border: none;
+  border-radius: 50px;
+  font-size: 1.3rem;
+  letter-spacing: 5px;
+  font-family: "Poppins", serif;
+  font-weight: 300;
+  cursor: pointer;
+  transition: all 0.5s ease-out;
+}
+.btn-geral:hover {
+  background-color: #d75133;
+}
+.btn-sec-1 {
+  background-color: #DC8F64;
+  color: #fffffc;
+  padding: 0.8rem 7rem;
+  border: none;
+  border-radius: 10px;
+  font-family: "Poppins", serif;
+  font-size: 1rem;
+  font-weight: 300;
+  cursor: pointer;
+  transition: all 0.5s ease-out;
+  margin-top: 10px;
+}
+
+/* Navbar */
+
+#rd-section-m7f7rvfb{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+    background: linear-gradient(to bottom, #fffffc 80%, rgba(255,255,255,0) 100%);
+    padding: 1rem;
+    height: 100px;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.logo img {
+  max-width: 150px;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.8rem;
+}
+.nav-links li a {
+  text-decoration: none;
+  color: #202020;
+  font-size: 0.9rem;
+  font-family: "Poppins", serif;
+  font-weight: 400;
+}
+.nav-links li a:hover {
+  color: #BE452B;
+}
+.cta-btn {
+  background-color: #BE452B;
+  color: #fffffc;
+  padding: 0.3rem 4rem;
+  border: none;
+  border-radius: 8px;
+  font-family: "Poppins", serif;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.5s ease-out;
+}
+.cta-btn:hover {
+  background-color: #d75133;
+}
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+.hamburger span {
+  height: 3px;
+  width: 25px;
+  background: #202020;
+  margin-bottom: 5px;
+  border-radius: 2px;
+}
+
+/* SESSÃO 01 */
+#head-conversao {
+  margin-top: 80px;
+  height: 95vh;
+  display: flex;
+  background: #fffffc;
+  justify-content: space-between;
+  margin-bottom: 0;
+}
+
+.texto {
+  align-content: center;
+  padding-right: 80px;
+}
+#head-conversao p {
+  margin-top: 10px;
+  font-size: 1rem;
+  letter-spacing: 2px;
+  color: #202020;
+}
+#head-conversao img {
+  max-width: 600px;
+}
+
+/* SESSÃO 02 */
+#autoridade {
+  background: #BE452B;
+  padding: 4rem;
+  text-align: center;
+}
+#autoridade h2 {
+  text-align: center;
+  color: #fffffc;
+  margin-bottom: 1.5rem;
+}
+
+/* Carrossel */
+.carrossel-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 1100px;
+  margin: 0 auto;
+  position: relative;
+}
+.carrossel-container {
+  width: 100%;
+  overflow: hidden;
+}
+.carrossel {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  align-items: center;
+  transition: transform 0.3s ease-in-out;
+}
+.item {
+  width: 300px;
+  height: 170px;
+  margin: auto 10px;
+  padding: 30px;
+  background: #fffffc;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  text-align: left;
+  font-size: 1.2rem;
+  flex-shrink: 0;
+  color: #BE452B;
+  font-family: "Poppins", serif;
+}
+.item span {
+  font-family: "Merriweather", serif;
+  font-weight: 800;
+  font-size: 3rem; /* Ícone */
+}
+.item img {
+  width: 70px;
+  margin-right: 10px;
+}
+.txt-item span {
+  display: block;
+}
+.nav-btn {
+  background: none;
+  border: none;
+  color: #fffffc;
+  cursor: pointer;
+  font-size: 24px;
+  padding: 1rem;
+  z-index: 10;
+}
+
+/* SEM RISCO */
+.box-semrisco {
+  background-color: #FFF5E4;
+  border: 2px solid #202020;
+  border-radius: 12px;
+  padding: 20px;
+  min-width: 600px;
+  max-width: 1000px;
+  margin: 80px auto;
+  text-align: center;
+  font-family: "Poppins", serif;
+  position: relative;
+}
+.title-semrisco {
+  background-color: #B6462A;
+  color: #FFF5E4;
+  font-weight: 400;
+  letter-spacing: 5px;
+  padding: 10px 20px;
+  border-radius: 8px;
+  position: absolute;
+  top: -18px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.items-semrisco {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 20px;
+}
+.item-semrisco {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: black;
+  font-weight: 600;
+  letter-spacing: 2px;
+  font-size: 14px;
+}
+.item-semrisco img {
+  font-size: 24px;
+  color: #B6462A;
+}
+
+/* SESSÃO 03: Motivação */
+#motivacao {
+  text-align: center;
+}
+.video-container {
+  max-width: 800px;
+  width: 100%;
+  position: relative;
+  border-radius: 15px;
+  overflow: hidden;
+  background: #BE452B;
+  margin: 40px auto;
+}
+.video-container::before {
+  content: "";
+  display: block;
+  padding-top: 56.25%;
+}
+.video-overlay {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  right: 5px;
+  bottom: 5px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.video-container iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#motivacao p {
+  font-size: 1rem;
+  margin: 2rem;
+  color: #202020;
+}
+#motivacao span {
+  font-family: "Merriweather", serif;
+  font-weight: 900;
+  color: #BE452B;
+  font-size: 1.5rem;
+  margin: 20px auto;
+}
+
+/* SESSÃO 04: Pontos de Autoridade */
+#suporte {
+  text-align: center;
+}
+.suporte-h2{
+    padding-top: 5rem;
+}
+#suporte h3 {
+  font-family: "Poppins", serif;
+  font-size: 1.5rem;
+  margin: 20px auto;
+  font-weight: 500;
+  letter-spacing: 5px;
+  color: #202020;
+}
+#suporte ul {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+.item-supor {
+  width: 150px;
+  height: 170px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 1rem;
+  flex-shrink: 0;
+  color: #202020;
+  font-family: "Merriweather", serif;
+}
+.item-supor img {
+  max-width: 80px;
+  margin-bottom: 20px;
+}
+.linha-separadora {
+  width: 70%;
+  height: 3px;
+  background-color: #202020;
+  border: none;
+  margin-top:4rem;
+}
+#suporte p {
+  font-size: 1.2rem;
+  margin: 20px;
+}
+
+.suporte-h2{
+    padding-top: 4rem;
+}
+
+/* Carrossel de fotos internas */
+.carrossel-foto-int {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.fotointerna-desk {
+  display: block;
+}
+.fotointerna-mobile {
+  display: none;
+}
+.carrossel-conteiner-foto-int {
+  margin: 30px auto;
+  width: 90%;
+  overflow: hidden;
+  border-radius: 10px;
+}
+.carrossel-wrapper-foto-int {
+  display: flex;
+  transition: transform 0.3s ease-in-out;
+}
+.item-foto-int {
+  min-width: 100%;
+}
+.item-foto-int img {
+  width: 100%;
+  display: block;
+  border-radius: 10px;
+}
+.nav-btn-foto-int {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #BE452B;
+}
+.nav-btn-foto-int:hover {
+  color: #DC8F64;
+}
+
+/* SESSÃO 05: Vantagens */
+#vantagens {
+  background: #BE452B;
+  text-align: center;
+  padding: 4rem;
+}
+#vantagens h2 {
+  color: #fffffc;
+}
+#vantagens h3 {
+  background-color: #FFF5E4;
+  border-radius: 50px;
+  font-size: 1rem;
+  letter-spacing: 5px;
+  font-family: "Poppins", serif;
+  font-weight: 600;
+  margin: 20px auto 80px;
+  display: inline-block;
+  padding: 0.5rem 1rem;
+}
+.carrosselApoio {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  transition: transform 0.3s ease-in-out;
+}
+#vantagens ul {
+  list-style: none;
+}
+.item-vtg {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 300px;
+  height: 150px;
+  margin: auto 10px;
+  padding: 30px;
+  background: #fffffc;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 0.7rem;
+  flex-shrink: 0;
+  color: #202020;
+  font-family: "Merriweather", serif;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+.item-vtg img{
+ max-width: 80px;
+ margin: 5px auto;
+}
+
+.nav-btn-vtg {
+  background: none;
+  border: none;
+  color: #fffffc;
+  cursor: pointer;
+  font-size: 24px;
+  padding: 1rem;
+  z-index: 10;
+}
+
+/* SESSÃO 06: Redução de Ceticismo */
+#Redu-Ceticismo {
+  text-align: center;
+}
+.redu-img img{
+    width:300px;
+    margin-right: 10px;
+}
+.conteudo-marca-br {
+  display: flex;
+  justify-content: space-around;
+  text-align: left;
+  align-items: center;
+}
+
+.conteudo-marca-sec{
+    margin: 50px;
+}
+
+.conteudo-marca-br h3 {
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+/* PORTFÓLIO */
+#portfolio {
+  text-align: center;
+}
+#portfolio h2 {
+  margin-bottom: 20px;
+}
+#portfolio span {
+  font-family: "Poppins", serif;
+  font-size: 0.8rem;
+  margin: 2px auto;
+  font-weight: 700;
+  letter-spacing: 5px;
+  color: #202020;
+}
+#portfolio img {
+  margin: 5px auto;
+}
+.cards-container {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow: auto;
+  padding-top: 0;
+}
+.card {
+  border: 1px solid #202020;
+  border-radius: 20px;
+  margin: 10px;
+  padding: 1rem;
+}
+.card img {
+  max-width: 180px;
+}
+.card h3 {
+  font-size: 1.5rem;
+}
+.card h4 {
+  font-family: "Poppins", serif;
+  font-weight: 600;
+  font-size: 0.8rem;
+  margin: 5px auto;
+  color: #202020;
+}
+.card p {
+  font-size: 0.8rem;
+}
+#portfolio h5 {
+  font-size: 4rem;
+  font-family: "Merriweather", serif;
+  color: #BE452B;
+  padding-top: 2rem;
+}
+#portfolio .btn-geral{
+    margin: 10px;
+}
+.infinity-img {
+  max-width: 100%;
+  padding: 20px 0;
+}
+.linha-separadora-inf {
+  width: 30%;
+  height: 2px;
+  background-color: #BE452B;
+  border: none;
+  margin: 20px auto;
+}
+
+/* HISTÓRIA */
+#historia {
+  text-align: center;
+}
+.conteudo-historia-recco {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 2rem 0;
+  font-family: "Poppins", serif;
+}
+.col-esquerda {
+  flex: 2;
+  color: #202020;
+  padding: 4rem;
+  text-align: justify;
+}
+.col-direita {
+  flex: 1;
+  background: #BE452B;
+  color: #fffffc;
+  padding: 4rem;
+  text-align: left;
+  align-content: center;
+}
+.col-direita li{
+    line-height: 100%;
+    margin: 20px;
+}
+.col-direita ul {
+  line-height: 3;
+  font-weight: 300;
+}
+
+/* PRINCÍPIOS */
+#principios {
+  text-align: center;
+  padding-bottom: 4rem;
+}
+.container-principios {
+  display: flex;
+  align-items: center;
+  text-align: left;
+  max-width: 1100px;
+  width: 100%;
+  margin: 2rem auto;
+}
+.icon-principios {
+  width: 50px;
+  margin: 60px;
+}
+.texto-principio h3 {
+  font-family: "Poppins", serif;
+  font-weight: 400;
+  color: #202020;
+  font-size: 2rem;
+}
+.texto-principio p {
+  font-size: 0.8rem;
+  line-height: 2;
+}
+.duvida {
+  color: #202020;
+  margin: 20px auto;
+}
+
+/* FOOTER */
+footer {
+  background-color: #fffffc;
+  font-family: "Poppins", sans-serif;
+  width: 100%;
+}
+.footer-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 80px;
+}
+.footer-left,
+.footer-center,
+.footer-right {
+  flex: 1;
+  min-width: 200px;
+  margin: 10px;
+}
+.footer-center {
+  text-align: left;
+  font-size: 0.8rem;
+}
+.footer-center h3 {
+  font-family: "Poppins", sans-serif;
+  color: #202020;
+  font-size: 1.2rem;
+  font-weight: 400;
+  letter-spacing: 5px;
+  margin-bottom: 10px;
+}
+.footer-right {
+  display: flex;
+  justify-content: flex-end;
+  gap: 30px;
+}
+.footer-right a img {
+  width: 40px;
+  height: 40px;
+}
+.footer-center ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.footer-legal {
+  display: block;
+  font-size: 0.7rem;
+  color: #202020;
+  background-color: #FFF5E4;
+  text-align: center;
+  padding: 10px;
+}
+
+/* MEDIA QUERIES */
+
+@media (min-width: 993px) and (max-width: 1200px) {
+  
+  h1 { font-size: 1.7rem; }
+  #head-conversao p{ font-size: .6rem;}
+  #head-conversao img{ max-width: 450px;}
+  #autoridade h2 { font-size: 2.2rem; }
+  .btn-sec-1{ padding: 0.8rem 4rem; }
+  .item {
+    width: 170px;
+    height: 100px;
+    font-size: .8rem;
+  }
+  section{
+    padding: 2.5rem 2rem 0 2rem;
+    margin-bottom: 2rem; /* Espaçamento entre final de uma sessão e início de outra */
+}
+  .item span { font-size: 2.5rem; }
+  .item img { width: 50px; margin-right: 10px; }
+  .item-vtg {
+    font-size: 0.7rem;
+  }
+  .item-vtg img { width: 80px; }
+  .col-direita{
+    padding: 1rem;
+    font-size: .7rem;
+  }
+
+  .col-esquerda {
+    flex: 2;
+    color: #202020;
+    padding: 2rem;
+    text-align: justify;
+  }
+  .col-direita li{
+      line-height: 100%;
+      margin: 50px 10px;
+  }
+}
+
+@media (max-width: 992px) {
+  section{
+    margin-bottom: 0.5rem; /* Espaçamento entre final de uma sessão e início de outra */
+}
+h1 {
+  margin-bottom: 1rem; /* Espaçamento entre título e texto */
+  font-size: 2.5rem;
+}
+h2, h3{
+  margin-bottom: 1rem; /* Espaçamento entre título e texto */
+}
+
+  .nav-links {
+    width: 280px;
+    position: absolute;
+    right: 0;
+    top: 4.5rem;
+    background: #fffffc;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    display: none;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    border-radius: 4px;
+    padding: 1rem 0;
+  }
+  .nav-links.active { display: flex; }
+  .cta-btn { display: none; }
+  .hamburger { display: flex; }
+  .logo img { width: 150px;}
+  #head-conversao {
+    display: block;
+    text-align: center;
+    align-content: center;
+    overflow: hidden;
+  }
+  .texto { padding-right: 0; }
+  #head-conversao img{ opacity: 0.7; margin: 0 auto;}
+  #head-conversao p { font-size: 0.7rem; letter-spacing: 2px; }
+  h2, h3 { font-size: 1.6rem; }
+  .btn-geral { padding: 0.5rem 1rem; font-size: 1rem; }
+  .btn-sec-1 { padding: 0.5rem 2rem; margin: 20px auto; }
+  #autoridade { padding: 2rem; }
+  #autoridade h2 { text-align: center; font-size: 2rem; margin-bottom: 1.5rem; }
+  .item {
+    width: 190px;
+    height: 150px;
+    margin: auto 12px;
+    padding: 10px;
+    justify-content: center;
+    text-align: center;
+    font-size: 0.8rem;
+    flex-direction: column;
+  }
+  .item span { font-size: 1.4rem; }
+  .item img { width: 50px; margin: 0; }
+  .conteudo-historia-recco { flex-direction: column; }
+  .col-esquerda, .col-direita {
+    flex: none;
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  /* Ajustes na seção SEM RISCO */
+  .box-semrisco {
+    border: 1px solid #202020;
+    border-radius: 12px;
+    padding: 10px;
+    min-width: 100px;
+    margin: 40px auto;
+  }
+  .items-semrisco {
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 100px;
+  }
+  .item-semrisco { flex-direction: column; font-size: 1rem; }
+  .item-semrisco img { font-size: 24px; color: #B6462A; }
+  /* Ajustes na SESSÃO 03 */
+  #motivacao { padding: 2rem 0.5rem; }
+  #motivacao p { font-size: 0.9rem; }
+  #motivacao span { font-size: 1.3rem; }
+  /* Ajustes na SESSÃO 04 */
+  #suporte { padding: 2rem; }
+  #suporte ul { margin: 5px auto; }
+  #suporte h3 { font-size: 0.8rem; font-weight: 500; }
+  .suporte-h2{padding-top: 1rem; }
+  .fotointerna-desk { display: none; }
+  .fotointerna-mobile { display: block; }
+  .item-supor { width: 90px; height: auto; font-size: 0.7rem; }
+  .item-supor img { width: 40px; margin: 10px auto; }
+  .linha-separadora { height: 1px; margin-top: 2rem; }
+  #suporte p { font-size: 0.9rem; }
+  /* Ajustes na SESSÃO 05 */
+  #vantagens { padding: 2rem; }
+  #vantagens h3 { font-size: 0.8rem; letter-spacing: 2px; margin: 20px auto 80px; }
+  .item-vtg {
+    width: 300px;
+    height: 200px;
+    margin: auto 10px;
+    padding: 10px;
+    font-size: 1rem;
+    letter-spacing: 1px;
+  }
+  /* Ajustes na SESSÃO 06 */
+  #Redu-Ceticismo { padding: 2rem; }
+  .conteudo-marca-br {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-top: 10px;
+  }
+  .conteudo-marca-br h3 { font-size: 1.5rem; margin-bottom: 5px; }
+  .conteudo-marca-sec { padding: 0.5rem; margin: 10px auto; }
+  .redu-img img {
+    max-width: 500px;
+    margin: 5px auto;
+    width: 100%;
+  }
+  /* Ajustes no PORTFÓLIO */
+  #portfolio { padding: 2rem; }
+  #portfolio h2 { margin-bottom: 10px; }
+  #portfolio h5 { margin: 1rem auto;}
+  .card {
+    border-radius: 10px;
+    margin: 10px;
+    padding: 0.5rem;
+  }
+  .card img { max-width: 180px; }
+  .card h3 { font-size: 1.3rem; }
+  .card h4 { font-size: 0.6rem; }
+  .card p { font-size: 0.6rem; }
+  #portfolio h5 { font-size: 3rem; }
+  #historia { padding: 2rem; }
+  .col-esquerda { padding: 0; }
+  .col-direita { padding: 1rem; text-align: center; }
+  .col-direita ul { list-style: none; }
+  #principios { margin-top: 20px; }
+  .container-principios {
+    flex-direction: column;
+    max-width: 600px;
+    text-align: center;
+  }
+  .icon-principios { width: 80px; margin: 20px; }
+  .texto-principio h3 { font-size: 1.5rem; }
+  .texto-principio p {
+    font-size: 0.7rem;
+    margin: auto;
+    max-width: 400px;
+  }
+  .duvida { margin: 40px auto; }
+  .footer-center { text-align: center; font-size: 0.7rem; }
+  .footer-legal { font-size: 0.5rem; }
+}
